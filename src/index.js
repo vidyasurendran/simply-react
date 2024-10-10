@@ -22,7 +22,7 @@ class App extends React.Component {
     render() {
         return(
         <div>
-            Count : {store.getState()}
+            Count the button presses : {store.getState()}
             <button onClick={() => store.dispatch({ type: 'INCREMENT' })}>+</button>
             <button onClick={() => store.dispatch({ type: 'DECREMENT' })}>-</button>
         </div>)
